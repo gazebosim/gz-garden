@@ -14,7 +14,7 @@ find_package(ignition-cmake2 2.7.0 REQUIRED)
 #============================================================================
 # Configure the project
 #============================================================================
-ign_configure_project(VERSION_SUFFIX)
+ign_configure_project(VERSION_SUFFIX pre1)
 
 # all list of garden packages
 
