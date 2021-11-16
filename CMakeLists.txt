@@ -34,4 +34,25 @@ ign_find_package(ignition-transport11 REQUIRED)
 ign_find_package(ignition-utils1 REQUIRED VERSION 1.1)
 ign_find_package(sdformat12 REQUIRED)
 
+if(build_warnings)
+  set(all_warnings " CONFIGURATION WARNINGS:")
+  foreach (msg ${build_warnings})
+    ign_string_append(all_warnings " -- ${msg}" DELIM "\n")
+  endforeach ()
+  message(WARNING "${all_warnings}")
+endif (build_warnings)
+
+if(build_errors)
+  message(SEND_ERROR "-- BUILD ERRORS: These must be resolved before compiling.")
+  foreach(msg ${build_errors})
+    message(SEND_ERROR "-- ${msg}")
+  endforeach()
+  message(SEND_ERROR "-- END BUILD ERRORS\n")
+
+  set(error_str "Errors encountered in build. Please see BUILD ERRORS above.")
+
+  message(FATAL_ERROR "${error_str}")
+
+endif()
+
 install(DIRECTORY gazebodistro DESTINATION ${IGN_DATA_INSTALL_DIR})
