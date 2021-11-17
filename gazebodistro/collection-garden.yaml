@@ -15,15 +15,15 @@ repositories:
   ign-gazebo:
     type: git
     url: https://github.com/ignitionrobotics/ign-gazebo
-    version: ign-gazebo6
+    version: ign-gazebo7
   ign-gui:
     type: git
     url: https://github.com/ignitionrobotics/ign-gui
-    version: ign-gui6
+    version: ign-gui7
   ign-launch:
     type: git
     url: https://github.com/ignitionrobotics/ign-launch
-    version: ign-launch5
+    version: ign-launch6
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
@@ -43,11 +43,11 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: ign-rendering6
+    version: ign-rendering7
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: ign-sensors6
+    version: ign-sensors7
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
