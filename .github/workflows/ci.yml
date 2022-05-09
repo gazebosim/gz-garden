@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Compile and test
         id: ci
-        uses: ignition-tooling/action-ignition-ci@chapulina/focal/before_dep
+        uses: ignition-tooling/action-ignition-ci@focal
         with:
           tests-enabled: false
   jammy-ci:
