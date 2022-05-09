@@ -1,17 +1,3 @@
-libignition-common5-dev
-libignition-fuel-tools8-dev
-libignition-gazebo7-dev
-libignition-gui7-dev
-libignition-launch6-dev
-libignition-msgs9-dev
-libignition-physics6-dev
-libignition-plugin2-dev
-libignition-rendering7-dev
-libignition-sensors7-dev
-libignition-tools2-dev
-libignition-transport12-dev
-libsdformat13-dev
-
 build-essential
 cmake
 pkg-config
