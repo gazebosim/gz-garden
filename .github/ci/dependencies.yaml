@@ -11,10 +11,6 @@ repositories:
     type: git
     url: https://github.com/gazebosim/gz-fuel-tools
     version: gz_cmake_project
-  gz-gazebo:
-    type: git
-    url: https://github.com/gazebosim/gz-gazebo
-    version: gz_cmake_project
   gz-gui:
     type: git
     url: https://github.com/gazebosim/gz-gui
@@ -46,6 +42,10 @@ repositories:
   gz-sensors:
     type: git
     url: https://github.com/gazebosim/gz-sensors
+    version: gz_cmake_project
+  gz-sim:
+    type: git
+    url: https://github.com/gazebosim/gz-sim
     version: gz_cmake_project
   gz-tools:
     type: git
