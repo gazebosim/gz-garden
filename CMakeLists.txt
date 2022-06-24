@@ -3,13 +3,13 @@ cmake_minimum_required(VERSION 3.10.2 FATAL_ERROR)
 #============================================================================
 # Initialize the project
 #============================================================================
-project(ignition-garden VERSION 1.0.0)
+project(gz-garden VERSION 1.0.0)
 
 #============================================================================
-# Find ignition-cmake
+# Find gz-cmake
 #============================================================================
-# If you get an error at this line, you need to install ignition-cmake
-find_package(ignition-cmake3 REQUIRED)
+# If you get an error at this line, you need to install gz-cmake
+find_package(gz-cmake3 REQUIRED)
 
 #============================================================================
 # Configure the project
@@ -18,19 +18,19 @@ gz_configure_project(VERSION_SUFFIX pre1)
 
 # all list of garden packages
 
-gz_find_package(ignition-common5 REQUIRED)
-gz_find_package(ignition-fuel_tools8 REQUIRED)
-gz_find_package(ignition-gazebo7 REQUIRED)
-gz_find_package(ignition-gui7 REQUIRED)
-gz_find_package(ignition-launch6 REQUIRED)
-gz_find_package(ignition-math7 REQUIRED COMPONENTS eigen3)
-gz_find_package(ignition-msgs9 REQUIRED)
-gz_find_package(ignition-physics6 REQUIRED)
-gz_find_package(ignition-plugin2 REQUIRED)
-gz_find_package(ignition-rendering7 REQUIRED)
-gz_find_package(ignition-sensors7 REQUIRED)
-gz_find_package(ignition-transport12 REQUIRED)
-gz_find_package(ignition-utils2 REQUIRED)
+gz_find_package(gz-common5 REQUIRED)
+gz_find_package(gz-fuel_tools8 REQUIRED)
+gz_find_package(gz-sim7 REQUIRED)
+gz_find_package(gz-gui7 REQUIRED)
+gz_find_package(gz-launch6 REQUIRED)
+gz_find_package(gz-math7 REQUIRED COMPONENTS eigen3)
+gz_find_package(gz-msgs9 REQUIRED)
+gz_find_package(gz-physics6 REQUIRED)
+gz_find_package(gz-plugin2 REQUIRED)
+gz_find_package(gz-rendering7 REQUIRED)
+gz_find_package(gz-sensors7 REQUIRED)
+gz_find_package(gz-transport12 REQUIRED)
+gz_find_package(gz-utils2 REQUIRED)
 gz_find_package(sdformat13 REQUIRED)
 
 if(build_warnings)
